@@ -1,0 +1,15 @@
+.off-canvas {
+	.menu {
+		li {
+			border-bottom: 1px solid rgba($white, 0.3);
+		}
+		a {
+			color: $secondary-color;
+			text-transform: uppercase;
+			text-align: left;
+			&:hover {
+				background:darken($primary-color, 14%);
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+.button {
+	display: inline-flex;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	&.secondary {
+		color: $white;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $white;
+		}
+	}
+	&:after {
+		@extend %fa-icon;
+		@extend .fas;
+		content: fa-content($fa-var-chevron-circle-right);
+		margin-left: 0.6em;
+		opacity: 0.6;
+	}
+}

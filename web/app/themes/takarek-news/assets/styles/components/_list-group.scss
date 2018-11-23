@@ -1,0 +1,20 @@
+.list-group {
+	&__title {
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 0 1rem;
+
+		h2 {
+			text-transform: uppercase;
+			@extend .h4;
+			font-weight: 700;
+		}
+	}
+
+	&:not(:first-child){
+		border-top: 1px solid #e5e5e5;
+		margin-top: 2rem;
+	}
+}

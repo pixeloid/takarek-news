@@ -1,0 +1,36 @@
+.card {
+	height: 100%;
+	margin: 0;
+	&--featured{
+		flex-direction: row;
+		img {
+			max-width: 50%;
+			height: auto !important;
+			width: auto;
+		}
+		border: none;
+		.card-section {
+			background: $secondary-color;
+			color: $white;
+		}
+	}
+
+	&__excerpt {
+		a {
+			display: none;
+		}
+	}
+	.card-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex: 1;	
+
+
+		h4 {
+			font-weight: 600;
+
+		}
+	}
+}

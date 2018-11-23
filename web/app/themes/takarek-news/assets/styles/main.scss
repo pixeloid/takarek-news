@@ -1,0 +1,41 @@
+@import "common/settings";
+
+// Automatically injected Bower dependencies via wiredep (never manually edit this block)
+// bower:scss
+@import "../../bower_components/foundation-sites/scss/foundation.scss";
+// endbower
+@include foundation-everything;
+
+
+@import "../../bower_components/fontawesome/web-fonts-with-css/scss/fontawesome.scss";
+@import "../../bower_components/fontawesome/web-fonts-with-css/scss/solid.scss";
+
+@import "common/foundation-icons";
+@import "components/buttons";
+// @import "components/comments";
+// @import "components/forms";
+@import "components/hero";
+@import "components/card";
+@import "components/wp-classes";
+@import "layouts/header";
+@import "components/submenu-bar";
+@import "components/search-form";
+@import "components/list-group";
+// @import "layouts/sidebar";
+@import "layouts/footer";
+@import "layouts/off-canvas";
+@import "layouts/posts";
+@import "layouts/tinymce";
+
+body {
+	background:#f3f3f3;
+	&:not(.home){
+		padding-top: 7rem;
+	}
+}
+
+.grid-container--bg{
+	background:$white;
+	border-left: 1px solid #e8e8e8;
+	border-right: 1px solid #e8e8e8;
+}

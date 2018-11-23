@@ -1,0 +1,26 @@
+.submenu-bar {
+	background:$primary-color;
+	color: $white;
+	border-top: 1px solid;
+
+	.menu {
+		text-transform: uppercase;
+		li{
+			a{
+				font-weight: 600;
+				color: $white;
+				padding: 1.5rem 0.8rem;
+				font-size: 0.8rem;
+				border-bottom: 3px solid transparent;
+				&:hover,
+				&:focus,
+				&:active {
+					color: $white;
+					border-bottom: 3px solid $secondary-color;
+					background:lighten($primary-color, 5%);
+				}
+
+			}
+		}
+	}
+}

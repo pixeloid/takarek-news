@@ -1,0 +1,8 @@
+Trendwerk\Faker\Entity\Post:
+  post{1..100}:
+    post_content: <paragraphs(3, true)>
+    post_title: '<sentence()>'
+    terms:
+      - category: <terms('category', 6)>
+    meta:
+      _thumbnail_id: '@image*->id'

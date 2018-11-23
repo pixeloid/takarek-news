@@ -1,0 +1,41 @@
+$site-hero-height: 65vh;
+
+.site-hero {
+  background: url('../images/hero_sample.png') top right no-repeat;
+  height: $site-hero-height;
+  max-height: 500px;
+  background-size: cover;
+
+  @media screen and (min-width: 40em) {
+    background-position: center center;
+  }
+
+  .grid-container,
+  &__inner {
+    // display: flex;
+    // justify-content: flex-start;
+    // align-items: center;
+    height: 100%;
+  }
+}
+
+.site-hero-content {
+  color: $white;
+  padding-top: 70px;
+  h1 {
+    font-size: 32px;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 600;
+  }
+
+  .button {
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 40em) {
+  }
+}
+

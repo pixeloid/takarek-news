@@ -1,0 +1,11 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  input {
+    border: none;
+    margin: 0;
+  }
+  .search-submit{
+    display: none;
+  }
+}
