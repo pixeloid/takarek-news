@@ -1,6 +1,6 @@
-set :application, 'agrovirtus'
-set :repo_url, 'git@github.com:pixeloid/agrovirtus-wp.git'
-set :wpcli_local_url, 'http://agrovirtus.dev1'
+set :application, 'takarek-news'
+set :repo_url, 'git@github.com:pixeloid/takarek-news.git'
+set :wpcli_local_url, 'http://takarek.dev1'
 
 # Branch options
 # Prompts for the branch name (defaults to current branch)
@@ -62,20 +62,20 @@ end
 after 'deploy:publishing', :build_theme do
     on roles(:app) do
         within fetch(:release_path) do
-            execute :composer, "install --no-dev --quiet -d #{release_path}/web/app/themes/agrovirtus"
+            execute :composer, "install --no-dev --quiet -d #{release_path}/web/app/themes/takarek-news"
         end
     end
 end
 
-set :theme_path, Pathname.new('web/app/themes/agrovirtus')
-set :local_app_path, Pathname.new('/Users/pixeloid/Sites/agrovirtus/')
+set :theme_path, Pathname.new('web/app/themes/takarek-news')
+set :local_app_path, Pathname.new('/Users/pixeloid/Sites/takarek/')
 set :local_theme_path, fetch(:local_app_path).join(fetch(:theme_path))
 
 namespace :assets do
   task :compile do
     run_locally do
       within fetch(:local_theme_path) do
-        execute :yarn, 'build'
+        execute :gulp, 'build'
       end
     end
   end
