@@ -1,0 +1,17 @@
+.post {
+	padding: 3rem 2rem;
+	overflow: hidden;
+	
+	&__image {
+		float: left;
+		margin: 0 2rem 2rem 0;
+		width: 50%;
+	}
+
+	h1 {
+		@extend .h3;
+		font-weight: 600;
+		line-height: 1;
+		margin-bottom: 1em;
+	}
+}
