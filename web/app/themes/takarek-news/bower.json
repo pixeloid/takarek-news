@@ -8,6 +8,7 @@
   "private": true,
   "dependencies": {
     "foundation-sites": "^6.5.1",
-    "fontawesome": "^5.5.0"
+    "fontawesome": "^5.5.0",
+    "swiper": "^4.4.2"
   }
 }

@@ -29,9 +29,8 @@
 
 body {
 	background:#f3f3f3;
-	&:not(.home){
-		padding-top: 7rem;
-	}
+	height: 100%;
+	position: relative;
 }
 
 .grid-container--bg{

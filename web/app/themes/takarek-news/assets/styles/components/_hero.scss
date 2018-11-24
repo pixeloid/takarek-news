@@ -17,6 +17,28 @@ $site-hero-height: 65vh;
     // align-items: center;
     height: 100%;
   }
+  &__pagination {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    .swiper-pagination {
+      text-align: right;
+      position: static;
+      .swiper-pagination-bullet {
+        background:$white;
+        opacity: 1;
+        width: 12px;
+        height: 12px;
+        margin-left: 5px ;
+        &-active {
+          background:$secondary-color;
+        }
+      }
+    }
+
+  }
 }
 
 .site-hero-content {

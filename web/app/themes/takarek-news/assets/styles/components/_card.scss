@@ -1,31 +1,20 @@
 .card {
 	height: 100%;
+	width: 100%;
 	margin: 0;
-	&--featured{
-		flex-direction: row;
-		img {
-			max-width: 50%;
-			height: auto !important;
-			width: auto;
-		}
-		border: none;
-		.card-section {
-			background: $secondary-color;
-			color: $white;
-		}
-	}
-
 	&__excerpt {
 		a {
 			display: none;
 		}
 	}
+
 	.card-section {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		align-items: flex-start;
-		flex: 1;	
+		flex: 1;		
+		height: 100%;
 
 
 		h4 {
@@ -33,4 +22,48 @@
 
 		}
 	}
+
+
+	&--featured{
+		@include breakpoint(large) {
+			flex-direction: row;
+			align-items: center;
+			border: none;
+		}
+
+		.card__image{
+			height: 100%;
+			flex: 1;
+			position: relative;
+			&:after{
+				content: "";
+				padding-top: 100%;
+				display: block;
+				background:red;
+				float: left;
+			}
+
+			img {
+				position: absolute;
+				@include absolute-center;
+				height: 100%;
+				width: auto;
+				// flex: 0 0 50%;
+				// height: auto;
+				// height: 100%!important;
+				// width: 50%!important;
+			}
+
+		}
+
+		.card-section {
+			background: $secondary-color;
+			color: $white;
+			@include breakpoint(large) {
+				flex: 0 0 50%;
+				min-width: 50%;
+			}
+		}
+	}
+
 }

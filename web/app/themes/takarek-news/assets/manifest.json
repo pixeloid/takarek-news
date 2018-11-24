@@ -25,6 +25,14 @@
         "../bower_components/foundation-sites/dist/js/foundation.js"
       ]
     },
+    "swiper.js": {
+      "bower": ["swiper"]
+    },
+    "swiper.css": {
+      "files": [
+        "../bower_components/swiper/dist/css/swiper.css"
+      ]
+    },
     "fonts": {
       "files": [
         "fonts/**/*", 

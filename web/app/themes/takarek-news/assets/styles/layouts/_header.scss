@@ -6,6 +6,7 @@
 	left: 0;
 	width: 100%;
 	padding: 0;
+	z-index: 10;
 
 	body:not(.home) &{
 		background:rgba($primary-color, 0.95);
@@ -19,13 +20,18 @@
 	.banner {
 		img{
 			display: block;
-			height: 3rem;
-			margin: 2rem 1.5rem;
+			height: 2rem;
+			margin: 1rem 1rem;
 			width: auto;
 			transition: all 0.3s ease;
-			body.scrolled &{
-				height: 2rem;
-				margin: 1rem 1.5rem;
+
+			@include breakpoint(medium) {
+				height: 3rem;
+				margin: 2rem 1.5rem;
+				body.scrolled &{
+					height: 2rem;
+					margin: 1rem .5rem;
+				}
 			}
 		}
 	}
@@ -37,5 +43,18 @@
 		&-text {
 			display: none;
 		}
+	}
+}
+
+
+.page-header {
+	background:$secondary-color;
+	color: $white;
+	padding: .5rem 0;
+	margin-bottom: 3rem;
+	h1 {
+		@extend .h4;
+		margin: 0;
+		font-weight: 600;
 	}
 }

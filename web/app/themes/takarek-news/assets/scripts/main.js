@@ -38,7 +38,18 @@
     // Home page
     'home': {
       init: function() {
-        // JavaScript to be fired on the home page
+        var mySwiper = new Swiper('.swiper-container', {
+            speed: 1000,
+            autoplay: true,
+            loop: true,
+            parallax: true,
+            pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              'clickable': true,
+            },
+
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

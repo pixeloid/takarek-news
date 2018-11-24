@@ -4,36 +4,88 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 
 ?>
 
-<div class="site-hero ">
-	<div class="grid-container">
-		<div class="site-hero__inner grid-x grid-margin-x align-middle">
-			<div class="site-hero-content cell medium-6">
-			  <h1>Az üzleti életben 
-nincsenek magányos 
-HŐSÖK, ez csak 
-egy legenda. 
-A siker csapatmunka.</h1>
-			  <a href="#" class="button secondary">Tovább </a>
+
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+		
+		<div class="swiper-slide">
+			<div class="site-hero ">
+				<div class="grid-container">
+					<div class="site-hero__inner grid-x grid-margin-x align-middle">
+						<div class="site-hero-content cell medium-6" data-swiper-parallax="-500">
+						  <h1>Az üzleti életben 
+			nincsenek magányos 
+			HŐSÖK, ez csak 
+			egy legenda. 
+			A siker csapatmunka.</h1>
+						  <a href="#" class="button secondary">Tovább </a>
+						</div>
+
+
+					</div>
+				</div>
 			</div>
 
+		</div>
+		<div class="swiper-slide">
+			<div class="site-hero ">
+				<div class="grid-container">
+					<div class="site-hero__inner grid-x grid-margin-x align-middle">
+						<div class="site-hero-content cell medium-6" data-swiper-parallax="-500">
+						  <h1>Az üzleti életben 
+			nincsenek magányos 
+			HŐSÖK, ez csak 
+			egy legenda. 
+			A siker csapatmunka.</h1>
+						  <a href="#" class="button secondary">Tovább </a>
+						</div>
 
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div class="swiper-slide">
+			<div class="site-hero ">
+				<div class="grid-container">
+					<div class="site-hero__inner grid-x grid-margin-x align-middle">
+						<div class="site-hero-content cell medium-6" data-swiper-parallax="-500">
+						  <h1>Az üzleti életben 
+			nincsenek magányos 
+			HŐSÖK, ez csak 
+			egy legenda. 
+			A siker csapatmunka.</h1>
+						  <a href="#" class="button secondary">Tovább </a>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+	<div class="site-hero__pagination">
+		<div class="grid-container">
+			<div class="swiper-pagination"></div>
 		</div>
 	</div>
 </div>
-
 
 <div class="submenu-bar">
 	
 	<div class="grid-container">
 		<div class="grid-x grid-margin-x align-middle ">
-			<div class="cell auto">
-				<ul class="menu horizontal">
-					<?php foreach($tax_terms as $term): ?>
-						<li>
-							<a href="<?php echo get_term_link($term) ?> " class=""><?php echo $term->name ?></a>
-						</li>
-					<?php endforeach; ?>
-				</ul>
+			<div class="cell auto show-for-xlarge">
+				<?php
+				if (has_nav_menu('primary_navigation')) :
+				  wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu horizontal align-right cat-menu']);
+				endif;
+				?>
 
 			</div>
 			<div class="cell shrink">
@@ -79,7 +131,7 @@ A siker csapatmunka.</h1>
 								 	<?php if($i==1): ?>
 										<div class="cell medium-6 large-8">
 										<div class="card card--featured">
-											<?php the_post_thumbnail('medium_square'); ?>
+											<div class="card__image"><?php the_post_thumbnail('medium_square'); ?></div>
 
 							 		<?php else: ?>
 									 	<div class="cell medium-6 large-4">

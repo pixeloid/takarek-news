@@ -44,7 +44,7 @@ var config = manifest.config || {};
 // - `globs.images` - Array of image path globs.
 // - `globs.bower` - Array of all the main Bower files.
 var globs = manifest.globs;
-console.log(manifest);
+
 // `project` - paths to first-party assets.
 // - `project.js` - Array of first-party JS assets.
 // - `project.css` - Array of first-party CSS assets.
@@ -213,7 +213,6 @@ gulp.task('scripts', ['jshint'], function() {
 // `gulp fonts` - Grabs all the fonts and outputs them in a flattened directory
 // structure. See: https://github.com/armed/gulp-flatten
 gulp.task('fonts', function() {
-  console.log(globs.fonts)
   return gulp.src(globs.fonts)
     .pipe(flatten())
     .pipe(gulp.dest(path.dist + 'fonts'))
