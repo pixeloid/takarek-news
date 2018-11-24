@@ -591,3 +591,277 @@
   INFO [d47e6f44] Finished in 0.711 seconds with exit status 0 (successful).
   INFO [75a7f678] Running /usr/bin/env echo "Branch master (at 498a6a6d0c07ffad068ec91b9b1d85ace2f0c382) deployed as release 20181123151339 by pixeloid" >> /Users/pixeloid/Sites/takarek-news/revisions.log as pixeloid@dev2.pixeloid.hu
   INFO [2c8de9aa] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-24 15:55:27 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b5690b05] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [bed70353] Finished in 0.454 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [6f2ec6f4] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [43c47efc] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [6b93890d] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [570dac65] Finished in 1.714 seconds with exit status 0 (successful).
+  INFO [216ebaf0] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [283116c7] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [8ce13ddc] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [a0ebeea4] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [f2c39c48] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [ec931baf] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [44c86f4c] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [ddd6a87a] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [c9de4fea] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [1427b0dc] Finished in 2.081 seconds with exit status 0 (successful).
+  INFO [55b8627b] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181124145529 as pixeloid@dev2.pixeloid.hu
+  INFO [ad26efc8] Finished in 0.047 seconds with exit status 0 (successful).
+  INFO [3f156bab] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181124145529 as pixeloid@dev2.pixeloid.hu
+  INFO [667eb43a] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [f816d539] Running /usr/bin/env echo "7da21b93df5a0c834f61b289e7b3028f4440e5e2" > REVISION as pixeloid@dev2.pixeloid.hu
+  INFO [d0c96c32] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [a8913410] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181124145529 as pixeloid@dev2.pixeloid.hu
+  INFO [9f8bc22e] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [ae12e87a] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/.env /Users/pixeloid/Sites/takarek-news/releases/20181124145529/.env as pixeloid@dev2.pixeloid.hu
+  INFO [5b989261] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [f1a9fdbd] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181124145529/web/app as pixeloid@dev2.pixeloid.hu
+  INFO [0e9e490d] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [6a082f41] Running /usr/bin/env rm -rf /Users/pixeloid/Sites/takarek-news/releases/20181124145529/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [535abc2d] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [1bde068e] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads /Users/pixeloid/Sites/takarek-news/releases/20181124145529/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [3905111c] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [490cbf6f] Running /usr/local/bin/php /usr/local/bin/composer install --no-dev --no-interaction --optimize-autoloader as pixeloid@dev2.pixeloid.hu
+  INFO [600e03e6] Finished in 2.692 seconds with exit status 0 (successful).
+  INFO [0c66a504] Running /usr/bin/env gulp build as pixeloid@localhost
+  INFO [275911ce] Finished in 13.461 seconds with exit status 0 (successful).
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/.DS_Store 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 10.79%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 21.57%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 32.36%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 43.15%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 53.93%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 64.72%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 75.51%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 86.29%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 97.08%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/images/hero_sample.png 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 10.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 20.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 30.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 40.01%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 50.01%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 60.01%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 70.01%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 80.01%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 90.01%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 16.85%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 25.27%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 33.69%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 42.11%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 50.54%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 67.38%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 75.8%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 84.23%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 92.65%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/main.css 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/swiper.css 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/swiper.css.map 61.08%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/styles/swiper.css.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/customizer.js.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 18.75%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 28.12%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 37.49%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 46.87%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 56.24%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 65.61%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 74.99%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 84.36%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 93.73%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 11.49%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 20.67%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 32.16%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 41.35%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 50.54%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 62.02%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 71.21%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 80.4%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 91.89%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 12.99%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 25.97%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 38.96%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 51.94%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 64.93%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 77.92%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 90.9%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 11.21%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 22.43%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 33.64%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 41.12%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 52.33%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 63.55%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 71.02%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 82.23%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 93.45%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/swiper.js.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 18.24%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 27.36%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 36.49%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 45.61%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 54.73%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 63.85%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 72.97%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 82.09%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 91.21%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/main.js 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/customizer.js 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 11.27%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 22.54%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 30.05%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 41.31%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 52.58%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 60.09%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 71.36%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 82.63%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 90.14%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js 18.77%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js 37.54%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js 56.32%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js 75.09%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js 93.86%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/jquery.js 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 11.91%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 21.44%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 30.96%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 40.49%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 50.02%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 61.93%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 71.45%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 80.98%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 90.51%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/scripts/foundation.js.map 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 16.64%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 24.96%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 33.28%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 41.59%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 58.23%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 66.55%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 74.87%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 83.19%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 91.51%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.ttf 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 11.67%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 23.33%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 35.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 46.67%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 58.34%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 70.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 81.67%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 93.34%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.svg 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.woff2 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.eot 30.02%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.eot 60.05%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.eot 90.07%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.eot 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.woff 51.17%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.woff 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 16.62%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 24.93%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 33.24%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 41.55%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 58.17%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 66.48%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 74.79%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 83.09%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 91.4%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.eot 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.ttf 28.76%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.ttf 57.51%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.ttf 86.27%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.ttf 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 11.48%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 20.66%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 32.14%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 41.32%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 50.5%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 61.98%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 71.16%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 80.34%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 91.82%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.svg 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.woff 90.46%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.woff 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 12.96%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 25.92%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 38.88%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 51.84%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 64.8%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 77.75%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 90.71%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.eot 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 10.97%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 21.94%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 30.71%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 41.68%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 50.46%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 61.42%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 70.2%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 81.17%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 92.14%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.svg 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff 17.17%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff 34.34%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff 51.5%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff 68.67%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff 85.84%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.ttf 40.72%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.ttf 81.45%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.ttf 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff2 22.18%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff2 44.37%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff2 66.55%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff2 88.74%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-solid-900.woff2 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 10.88%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 21.77%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 32.65%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 43.54%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 54.42%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 65.3%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 76.19%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 87.07%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 97.95%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/foundation-icons.svg 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff2 23.52%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff2 47.04%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff2 70.56%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff2 94.07%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff2 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff 20.08%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff 40.15%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff 60.23%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff 80.3%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.woff 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 12.98%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 25.97%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 38.95%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 51.93%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 64.92%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 77.9%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 90.88%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-brands-400.ttf 100.0%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.eot 40.49%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.eot 80.99%
+  INFO Uploading /Users/pixeloid/Sites/takarek/web/app/themes/takarek-news/dist/fonts/fa-regular-400.eot 100.0%
+  INFO [5d9af687] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/releases/20181124145529 /Users/pixeloid/Sites/takarek-news/releases/current as pixeloid@dev2.pixeloid.hu
+  INFO [f2e47a9d] Finished in 0.044 seconds with exit status 0 (successful).
+  INFO [302068c6] Running /usr/bin/env mv /Users/pixeloid/Sites/takarek-news/releases/current /Users/pixeloid/Sites/takarek-news as pixeloid@dev2.pixeloid.hu
+  INFO [77414398] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [25e85a0a] Running /usr/local/bin/php /usr/local/bin/composer install --no-dev --quiet -d /Users/pixeloid/Sites/takarek-news/releases/20181124145529/web/app/themes/takarek-news as pixeloid@dev2.pixeloid.hu
+  INFO [52b6eff9] Finished in 0.748 seconds with exit status 0 (successful).
+  INFO [a52475bb] Running /usr/bin/env echo "Branch master (at 7da21b93df5a0c834f61b289e7b3028f4440e5e2) deployed as release 20181124145529 by pixeloid" >> /Users/pixeloid/Sites/takarek-news/revisions.log as pixeloid@dev2.pixeloid.hu
+  INFO [b74a350f] Finished in 0.069 seconds with exit status 0 (successful).
