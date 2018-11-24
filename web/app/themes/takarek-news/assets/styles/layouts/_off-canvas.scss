@@ -1,22 +1,55 @@
 .off-canvas {
+
+	transition: margin 0.3s ease, padding 0.3s ease, transform 0.5s ease;
+	margin-top: 4rem;
+
+	@include breakpoint(medium){
+		margin-top: 7rem;
+		body.scrolled & {
+			margin-top: 4rem;
+		}
+	}
+
+	body.home &{
+		margin-top: 0;
+		padding-top: 4rem;
+
+		@include breakpoint(medium){
+			padding-top: 7rem;
+		}
+	}
+
+	@include breakpoint(medium){
+		body.home.scrolled & {
+			padding-top: 4rem;
+		}
+	}
+
 	.menu {
+		border-top: 1px solid rgba($white, 0.3);
 		li {
 			border-bottom: 1px solid rgba($white, 0.3);
 		}
 		a {
-			color: $secondary-color;
 			text-transform: uppercase;
 			text-align: left;
+			padding: 1rem;
 			&:hover {
-				background:darken($primary-color, 14%);
+				background:darken($primary-color, 4%);
 			}
 		}
 	}
 
 	&-content {
 		body:not(.home) &{
-			padding-top: 7rem;
+			padding-top: 4rem;
+			@include breakpoint(medium){
+				padding-top: 7rem;
+			}
+
 		}
+
+
 
 	}
 }

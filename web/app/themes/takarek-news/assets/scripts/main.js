@@ -39,7 +39,6 @@
     'home': {
       init: function() {
         var mySwiper = new Swiper('.swiper-container', {
-            speed: 1000,
             autoplay: true,
             loop: true,
             parallax: true,

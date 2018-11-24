@@ -19,4 +19,14 @@
 		margin-left: 0.6em;
 		opacity: 0.6;
 	}
+
+	&--back {
+		&:after {
+			content: fa-content($fa-var-chevron-circle-left);
+			order: -1;
+			margin-left: 0;
+			margin-right: 0.6em;
+
+		}
+	}
 }

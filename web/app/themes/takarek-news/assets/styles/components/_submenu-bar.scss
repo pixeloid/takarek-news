@@ -12,10 +12,12 @@
 .cat-menu {
 	text-transform: uppercase;
 
-	@include breakpoint(large down) {
-		display: none;
-	}
 
+	.site-header &{
+		@include breakpoint(large down) {
+			display: none;
+		}
+	}
 	body.home .site-header &{
 		display: none;
 	}

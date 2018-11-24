@@ -25,7 +25,7 @@
 
 
 	&--featured{
-		@include breakpoint(large) {
+		@include breakpoint(medium) {
 			flex-direction: row;
 			align-items: center;
 			border: none;
@@ -35,19 +35,24 @@
 			height: 100%;
 			flex: 1;
 			position: relative;
-			&:after{
-				content: "";
-				padding-top: 100%;
-				display: block;
-				background:red;
-				float: left;
+			align-self: center;
+			@include breakpoint(medium) {
+				&:after{
+					content: "";
+					padding-top: 100%;
+					display: block;
+					background:red;
+					float: left;
+				}
 			}
-
 			img {
-				position: absolute;
-				@include absolute-center;
-				height: 100%;
-				width: auto;
+				@include breakpoint(medium) {
+					object-fit: cover;
+					position: absolute;
+					@include absolute-center;
+					height: 100%;
+					width: auto;
+				}
 				// flex: 0 0 50%;
 				// height: auto;
 				// height: 100%!important;
@@ -59,6 +64,7 @@
 		.card-section {
 			background: $secondary-color;
 			color: $white;
+			padding: 2rem;
 			@include breakpoint(large) {
 				flex: 0 0 50%;
 				min-width: 50%;

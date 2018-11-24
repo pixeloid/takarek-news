@@ -45,10 +45,18 @@ $site-hero-height: 65vh;
   color: $white;
   padding-top: 70px;
   h1 {
-    font-size: 32px;
       color: $white;
       text-transform: uppercase;
       font-weight: 600;
+      font-size: 5vw;  
+      padding: 0 1rem;
+    
+      @include breakpoint(540px) {
+        font-size: 27px;      
+      }
+      @include breakpoint(large) {
+        font-size: 32px;      
+      }
   }
 
   .button {
@@ -56,6 +64,7 @@ $site-hero-height: 65vh;
     font-size: 18px;
     margin-bottom: 0;
     margin-top: 1em;
+    margin-left: 1rem;
   }
 
   @media screen and (min-width: 40em) {

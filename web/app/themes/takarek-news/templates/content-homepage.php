@@ -14,7 +14,7 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 			<div class="site-hero ">
 				<div class="grid-container">
 					<div class="site-hero__inner grid-x grid-margin-x align-middle">
-						<div class="site-hero-content cell medium-6" data-swiper-parallax="-500">
+						<div class="site-hero-content cell medium-10 large-8" data-swiper-parallax="-300">
 						  <h1>Az üzleti életben 
 			nincsenek magányos 
 			HŐSÖK, ez csak 
@@ -33,7 +33,7 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 			<div class="site-hero ">
 				<div class="grid-container">
 					<div class="site-hero__inner grid-x grid-margin-x align-middle">
-						<div class="site-hero-content cell medium-6" data-swiper-parallax="-500">
+						<div class="site-hero-content cell medium-10 large-8" data-swiper-parallax="-300">
 						  <h1>Az üzleti életben 
 			nincsenek magányos 
 			HŐSÖK, ez csak 
@@ -52,7 +52,7 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 			<div class="site-hero ">
 				<div class="grid-container">
 					<div class="site-hero__inner grid-x grid-margin-x align-middle">
-						<div class="site-hero-content cell medium-6" data-swiper-parallax="-500">
+						<div class="site-hero-content cell medium-10 large-8" data-swiper-parallax="-300">
 						  <h1>Az üzleti életben 
 			nincsenek magányos 
 			HŐSÖK, ez csak 
@@ -110,7 +110,7 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 
 					<?php 
 					$args = array(
-						'posts_per_page' => 6,
+						'posts_per_page' => 5,
 						 'category' => $term->term_id,
 						'post_type' => 'post',
 					 );
@@ -122,39 +122,12 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 					 	
 					 	<?php $i=0; ?>
 
-						 <?php foreach($tax_terms_posts as $post): ?>
-
-							<?php   setup_postdata($post); ?>
+						 <?php foreach($tax_terms_posts as $post):  setup_postdata($post); ?>
 						 	
 						 	<?php $i++; ?>
 
-								 	<?php if($i==1): ?>
-										<div class="cell medium-6 large-8">
-										<div class="card card--featured">
-											<div class="card__image"><?php the_post_thumbnail('medium_square'); ?></div>
+							<?php include(locate_template( 'templates/card-listitem.php' )); ?>
 
-							 		<?php else: ?>
-									 	<div class="cell medium-6 large-4">
-									 	<div class="card">
-									 		<?php the_post_thumbnail(); ?>
-
-								 	<?php endif; ?>
-
-				  	        		  <div class="card-section">
-				  	        		    <h4><?php the_title()  ?></h4>
-				  	        		    <?php if($i==1): ?>
-				  	        		    	<div class="card__excerpt">
-				  	        		    		<?php the_excerpt()  ?>
-				  	        		    	</div>
-										<?php endif; ?>	
-
-				  	        		    <a href="<?php the_permalink(); ?>" class="button">Tovább</a>
-				  	        		  </div>
-				  	        		</div>
-				  	        	</div>
-
-
-				  	        	
 				  	    <?php endforeach; ?>
 				  	</div>
 			</div>

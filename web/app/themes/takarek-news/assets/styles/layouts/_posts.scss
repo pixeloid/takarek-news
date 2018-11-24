@@ -1,11 +1,25 @@
 .post {
-	padding: 3rem 2rem;
-	overflow: hidden;
-	
+	padding: 0 1rem  3rem;
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+		width: 100%;
+	}
+	@include breakpoint(medium){
+		padding: 3rem 1rem;
+	}
+	@include breakpoint(large){
+		padding: 3rem 2rem;
+	}
 	&__image {
-		float: left;
-		margin: 0 2rem 2rem 0;
-		width: 50%;
+		margin: 0 calc(-1rem - 10px) 2rem;
+		@include breakpoint(medium){
+			float: left;
+			margin: 0 2rem 2rem 0;
+			width: 50%;
+		}
+
 	}
 
 	h1 {
