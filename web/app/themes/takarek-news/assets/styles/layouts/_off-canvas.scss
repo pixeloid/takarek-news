@@ -44,7 +44,7 @@
 		body:not(.home) &{
 			padding-top: 4rem;
 			@include breakpoint(medium){
-				padding-top: 7rem;
+				padding-top: 5rem;
 			}
 
 		}

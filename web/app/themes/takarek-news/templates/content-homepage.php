@@ -2,6 +2,18 @@
 
 $tax_terms = get_terms( 'category', 'orderby=name');
 
+
+$heroes = get_posts(array(
+	'numberposts'	=> -1,
+	'post_type'		=> 'post',
+	'meta_query'	=> array(
+		'relation'		=> 'AND',
+		array(
+			'key'	 	=> 'homepage_hero',
+			'compare' 	=> 'IS NOT NULL',
+		)
+	),
+));
 ?>
 
 
@@ -10,64 +22,24 @@ $tax_terms = get_terms( 'category', 'orderby=name');
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
 		
-		<div class="swiper-slide">
-			<div class="site-hero ">
-				<div class="grid-container">
-					<div class="site-hero__inner grid-x grid-margin-x align-middle">
-						<div class="site-hero-content cell medium-10 large-8" data-swiper-parallax="-300">
-						  <h1>Az üzleti életben 
-			nincsenek magányos 
-			HŐSÖK, ez csak 
-			egy legenda. 
-			A siker csapatmunka.</h1>
-						  <a href="#" class="button secondary">Tovább </a>
+		<?php foreach ($heroes as $hero):?>
+			<div class="swiper-slide">
+				<div class="site-hero " style="background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(0,0,0, .6) 100%), url(<?php echo get_field('homepage_hero', $hero); ?>) top /cover;">
+					<div class="grid-container">
+						<div class="site-hero__inner grid-x grid-margin-x align-middle">
+							<div class="site-hero-content cell medium-8 large-6" data-swiper-parallax="-300">
+							  <h1> <?php echo get_the_title($hero) ?></h1>
+							  <a href="<?php echo get_the_permalink($hero) ?>" class="button secondary">Tovább </a>
+							</div>
+
+
 						</div>
-
-
 					</div>
 				</div>
+
 			</div>
 
-		</div>
-		<div class="swiper-slide">
-			<div class="site-hero ">
-				<div class="grid-container">
-					<div class="site-hero__inner grid-x grid-margin-x align-middle">
-						<div class="site-hero-content cell medium-10 large-8" data-swiper-parallax="-300">
-						  <h1>Az üzleti életben 
-			nincsenek magányos 
-			HŐSÖK, ez csak 
-			egy legenda. 
-			A siker csapatmunka.</h1>
-						  <a href="#" class="button secondary">Tovább </a>
-						</div>
-
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-		<div class="swiper-slide">
-			<div class="site-hero ">
-				<div class="grid-container">
-					<div class="site-hero__inner grid-x grid-margin-x align-middle">
-						<div class="site-hero-content cell medium-10 large-8" data-swiper-parallax="-300">
-						  <h1>Az üzleti életben 
-			nincsenek magányos 
-			HŐSÖK, ez csak 
-			egy legenda. 
-			A siker csapatmunka.</h1>
-						  <a href="#" class="button secondary">Tovább </a>
-						</div>
-
-
-					</div>
-				</div>
-			</div>
-
-		</div>
-
+		<?php endforeach; ?>
 	</div>
 	<div class="site-hero__pagination">
 		<div class="grid-container">
@@ -96,7 +68,7 @@ $tax_terms = get_terms( 'category', 'orderby=name');
 
 </div>
 
-<div class="grid-container grid-container--bg">
+<div class="grid-container ">
 	
 
 	  	<?php foreach($tax_terms as $term): ?>

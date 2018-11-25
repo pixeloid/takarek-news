@@ -61,7 +61,7 @@
 //  56. Xy Grid
 
 @import 'util/util';
-@import url('https://fonts.googleapis.com/css?family=Istok+Web:400,400i,700,700i&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=latin-ext');
 
 
 $fa-font-path:                "../fonts";
@@ -73,7 +73,7 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: rgb(29, 66, 138),
+  primary: #2768ab,
   secondary: rgb(255, 130, 0),
   tertiary: rgb(0, 178, 169),
   success: #3adb76,
@@ -86,8 +86,8 @@ $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
-$body-font-color: $black;
-$body-font-family: 'Istok Web', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-color: rgba($black,.54);
+$body-font-family: 'Roboto', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -140,17 +140,17 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-weight-normal;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
+$header-color: $black;
 $header-lineheight: 1.4;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
+    'h1': ('font-size': 32),
+    'h2': ('font-size': 28),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 22),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 18),
   ),
   medium: (
     'h1': ('font-size': 48),
