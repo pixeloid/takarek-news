@@ -55,7 +55,7 @@ $heroes = get_posts(array(
 			<div class="cell auto show-for-xlarge">
 				<?php
 				if (has_nav_menu('primary_navigation')) :
-				  wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu horizontal cat-menu']);
+				  wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu horizontal	 cat-menu']);
 				endif;
 				?>
 
