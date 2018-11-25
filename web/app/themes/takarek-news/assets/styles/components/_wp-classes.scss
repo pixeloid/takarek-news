@@ -49,3 +49,27 @@
 .screen-reader-text {
   @extend .show-for-sr;
 }
+
+.nav-links {
+  text-align: center;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  a {
+    @extend .button;
+    @extend .primary;
+    margin: 2rem;
+
+  }
+  .nav-next {
+    margin-left: auto;
+  }
+.nav-previous a{
+  @extend .button--back;
+}
+}
+
+.entry-summary a{
+  display: none;
+}
