@@ -19,6 +19,12 @@
       </header>
       <div class="entry-content">
   
+  <?php if (get_field('author')): ?>
+    <p><i>
+      <?php echo get_field('author') ?>
+    </i></p>
+  <?php endif ?>
+
         <?php the_content(); ?>
 
         <hr>
