@@ -18,10 +18,10 @@ $features = get_posts(array(
 	'numberposts'	=> 5,
 	'post_type'		=> 'post',
 	'meta_query'	=> array(
-		'relation'		=> 'AND',
 		array(
 			'key'	 	=> 'is_featured',
-			'compare' 	=> 'IS NOT NULL',
+			'value'	 	=> true,
+			'compare' 	=> '=',
 		)
 	),
 ));
@@ -90,7 +90,6 @@ $features = get_posts(array(
 				 	<?php $i=0; ?>
 
 					 <?php foreach($features as $post):  setup_postdata($post); ?>
-					 	
 					 	<?php $i++; ?>
 
 						<?php include(locate_template( 'templates/card-listitem.php' )); ?>

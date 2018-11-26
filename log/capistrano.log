@@ -4160,3 +4160,52 @@
   INFO [db49d062] Finished in 0.673 seconds with exit status 0 (successful).
   INFO [67153a74] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz as pixeloid@localhost
   INFO [c7f00018] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-26 21:49:06 +0100 cap staging wpcli:db:pull
+  INFO ---------------------------------------------------------------------------
+  INFO [5ea52ca7] Running /usr/local/bin/php /usr/local/bin/wp db export - | gzip > /tmp/wpcli_database.sql.gz as pixeloid@dev2.pixeloid.hu
+  INFO [755483ba] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO Downloading /tmp/wpcli_database.sql.gz 18.49%
+  INFO Downloading /tmp/wpcli_database.sql.gz 36.98%
+  INFO Downloading /tmp/wpcli_database.sql.gz 55.47%
+  INFO Downloading /tmp/wpcli_database.sql.gz 73.97%
+  INFO Downloading /tmp/wpcli_database.sql.gz 100.0%
+  INFO [52960064] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz as pixeloid@dev2.pixeloid.hu
+  INFO [821e7253] Finished in 0.024 seconds with exit status 0 (successful).
+  INFO [0557ad32] Running /usr/bin/env gunzip -c /tmp/wpcli_database.sql.gz > /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [9119ecaf] Finished in 0.020 seconds with exit status 0 (successful).
+  INFO [2b613fa3] Running /usr/local/bin/php /usr/local/bin/wp db import /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [4de08041] Finished in 0.716 seconds with exit status 0 (successful).
+  INFO [7c83ed55] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [782fe365] Finished in 0.011 seconds with exit status 0 (successful).
+  INFO [e38b03bf] Running /usr/local/bin/php /usr/local/bin/wp search-replace http://takarek.dev2.pixeloid.hu http://takarek.dev1 --skip-columns=guid --url=http://takarek.dev2.pixeloid.hu as pixeloid@localhost
+  INFO [8b40101c] Finished in 0.634 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-26 21:57:40 +0100 cap staging wpcli:uploads:rsync:pull
+  INFO ---------------------------------------------------------------------------
+  INFO [a6789c04] Running /usr/bin/env rsync -avz --rsh=ssh --progress pixeloid@dev2.pixeloid.hu:/Users/pixeloid/Sites/takarek-news/shared/web/app/uploads/ web/app/uploads/ as pixeloid@localhost
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-26 21:57:50 +0100 cap staging wpcli:uploads:rsync:pull
+  INFO ---------------------------------------------------------------------------
+  INFO [477952e0] Running /usr/bin/env rsync -avz --rsh=ssh --progress pixeloid@dev2.pixeloid.hu:/Users/pixeloid/Sites/takarek-news/shared/web/app/uploads/ web/app/uploads/ as pixeloid@localhost
+  INFO [9b2cd441] Finished in 0.253 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-26 21:57:58 +0100 cap staging wpcli:db:pull
+  INFO ---------------------------------------------------------------------------
+  INFO [a3123fd2] Running /usr/local/bin/php /usr/local/bin/wp db export - | gzip > /tmp/wpcli_database.sql.gz as pixeloid@dev2.pixeloid.hu
+  INFO [b458131f] Finished in 0.297 seconds with exit status 0 (successful).
+  INFO Downloading /tmp/wpcli_database.sql.gz 17.92%
+  INFO Downloading /tmp/wpcli_database.sql.gz 35.84%
+  INFO Downloading /tmp/wpcli_database.sql.gz 53.76%
+  INFO Downloading /tmp/wpcli_database.sql.gz 71.68%
+  INFO Downloading /tmp/wpcli_database.sql.gz 100.0%
+  INFO [345998b3] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz as pixeloid@dev2.pixeloid.hu
+  INFO [0d5bb47b] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [1f16717f] Running /usr/bin/env gunzip -c /tmp/wpcli_database.sql.gz > /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [0efe647b] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [03abdd93] Running /usr/local/bin/php /usr/local/bin/wp db import /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [eae69896] Finished in 0.686 seconds with exit status 0 (successful).
+  INFO [f0c51fac] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [e940dcc8] Finished in 0.013 seconds with exit status 0 (successful).
+  INFO [ff4b660d] Running /usr/local/bin/php /usr/local/bin/wp search-replace http://takarek.dev2.pixeloid.hu http://takarek.dev1 --skip-columns=guid --url=http://takarek.dev2.pixeloid.hu as pixeloid@localhost
+  INFO [8a920dc0] Finished in 0.430 seconds with exit status 0 (successful).
