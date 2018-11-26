@@ -119,6 +119,14 @@ $features = get_posts(array(
 						'posts_per_page' => 5,
 						 'category' => $term->term_id,
 						'post_type' => 'post',
+						'meta_query'	=> array(
+							array(
+								'key'	 	=> 'is_featured',
+								'value'	 	=> false,
+								'compare' 	=> '=',
+							)
+						),
+
 					 );
 					$tax_terms_posts = get_posts( $args );
 					 ?>
