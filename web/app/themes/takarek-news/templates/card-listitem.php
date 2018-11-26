@@ -17,7 +17,7 @@
 	<div class="cell medium-6 large-4">
  	<div class="card">
 	 	<?php if(has_post_thumbnail()): ?>
-	 	    <?php the_post_thumbnail(); ?>
+	 	    <?php the_post_thumbnail('card_landscape'); ?>
 	 	    <div class="card-section">
 		 	    <h4><?php the_title()  ?></h4>
 	 	<?php else: ?>
