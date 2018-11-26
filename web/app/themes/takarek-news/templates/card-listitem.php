@@ -5,6 +5,11 @@
 		</div>
 		<div class="card-section">
 			<h4><?php the_title()  ?></h4>
+			<?php if (get_field('author')): ?>
+				<span><i>
+					<?php echo get_field('author') ?>
+				</i></span>
+			<?php endif ?>
 			<div class="card__excerpt">
 				<?php the_excerpt()  ?>
 			</div>
@@ -23,6 +28,11 @@
 	 	<?php else: ?>
 	 		<div class="card-section">
 		 		<h4><?php the_title()  ?></h4>
+		 		<?php if (get_field('author')): ?>
+		 			<span><i>
+		 				<?php echo get_field('author') ?>
+		 			</i></span>
+		 		<?php endif ?>
 		 		<div class="card__excerpt">
 		 			<?php the_excerpt()  ?>
 		 		</div>
