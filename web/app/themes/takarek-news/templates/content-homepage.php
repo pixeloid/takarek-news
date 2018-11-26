@@ -122,8 +122,8 @@ $features = get_posts(array(
 						'meta_query'	=> array(
 							array(
 								'key'	 	=> 'is_featured',
-								'value'	 	=> false,
-								'compare' 	=> '=',
+								'value'	 	=> true,
+								'compare' 	=> '!=',
 							)
 						),
 
