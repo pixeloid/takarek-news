@@ -39,7 +39,10 @@
     'home': {
       init: function() {
         var mySwiper = new Swiper('.swiper-container', {
-            autoplay: true,
+            autoplay: {
+              delay: 5000,
+            },
+            speed: 1000,
             loop: true,
             parallax: true,
             pagination: {

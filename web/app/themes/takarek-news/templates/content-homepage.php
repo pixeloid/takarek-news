@@ -14,6 +14,17 @@ $heroes = get_posts(array(
 		)
 	),
 ));
+$features = get_posts(array(
+	'numberposts'	=> 5,
+	'post_type'		=> 'post',
+	'meta_query'	=> array(
+		'relation'		=> 'AND',
+		array(
+			'key'	 	=> 'is_featured',
+			'compare' 	=> 'IS NOT NULL',
+		)
+	),
+));
 ?>
 
 
@@ -24,7 +35,7 @@ $heroes = get_posts(array(
 		
 		<?php foreach ($heroes as $hero):?>
 			<div class="swiper-slide">
-				<div class="site-hero " style="background: linear-gradient(to left, rgba(255,255,255,0) 0%, rgba(0,0,0, .6) 100%), url(<?php echo get_field('homepage_hero', $hero); ?>) top /cover;">
+				<div class="site-hero " style="background:  url(<?php echo get_field('homepage_hero', $hero); ?>) top /cover;">
 					<div class="grid-container">
 						<div class="site-hero__inner grid-x grid-margin-x align-middle">
 							<div class="site-hero-content cell medium-8 large-6" data-swiper-parallax="-300">
@@ -68,8 +79,32 @@ $heroes = get_posts(array(
 
 </div>
 
+<?php if($features): ?>
+
+	<div class="grid-container">
+		<div class="list-group">
+			<div class="list-group__title">
+	</div>
+				 <div class="grid-x grid-margin-x grid-margin-y">
+				 	
+				 	<?php $i=0; ?>
+
+					 <?php foreach($features as $post):  setup_postdata($post); ?>
+					 	
+					 	<?php $i++; ?>
+
+						<?php include(locate_template( 'templates/card-listitem.php' )); ?>
+
+			  	    <?php endforeach; ?>
+			  	</div>
+		</div>
+
+	</div>
+<?php endif; ?>
+
+
 <div class="grid-container ">
-	
+		
 
 	  	<?php foreach($tax_terms as $term): ?>
 			
