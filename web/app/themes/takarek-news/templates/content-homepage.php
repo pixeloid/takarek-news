@@ -40,6 +40,12 @@ $features = get_posts(array(
 						<div class="site-hero__inner grid-x grid-margin-x align-middle">
 							<div class="site-hero-content cell medium-8 large-6" data-swiper-parallax="-300">
 							  <h1> <?php echo get_the_title($hero) ?></h1>
+							  <?php if (get_field('lead', $hero)): ?>
+							  	<p>
+							  		<?php echo get_field('lead', $hero) ?>
+							  	</p>
+							  <?php endif ?>
+
 							  <a href="<?php echo get_the_permalink($hero) ?>" class="button secondary">Tovább </a>
 							</div>
 

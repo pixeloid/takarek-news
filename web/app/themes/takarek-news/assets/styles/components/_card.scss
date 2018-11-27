@@ -32,7 +32,12 @@
 			margin-bottom: 1em;
 
 		}
-
+		span {
+			display: block;
+			margin-bottom: 1em;
+			margin-top: -1em;
+			font-size: 0.9em;
+		}
 		a.button{
 			margin-left: auto;
 		}

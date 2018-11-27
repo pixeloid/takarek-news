@@ -25,6 +25,12 @@
     </i></p>
   <?php endif ?>
 
+  <?php if (get_field('lead')): ?>
+    <p>
+     <b> <?php echo get_field('lead') ?></b>
+    </p>
+  <?php endif ?>
+
         <?php the_content(); ?>
 
         <hr>

@@ -6620,3 +6620,27 @@
   INFO [ef0bd7b2] Finished in 0.553 seconds with exit status 0 (successful).
   INFO [d608b0ef] Running /usr/bin/env echo "Branch master (at 27591d24cb4b16a965886238bfcb5feaf1c85deb) deployed as release 20181127085526 by pixeloid" >> /Users/pixeloid/Sites/takarek-news/revisions.log as pixeloid@dev2.pixeloid.hu
   INFO [cab50a59] Finished in 0.112 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-27 18:16:01 +0100 cap staging wpcli:db:pull
+  INFO ---------------------------------------------------------------------------
+  INFO [45bf62ca] Running /usr/local/bin/php /usr/local/bin/wp db export - | gzip > /tmp/wpcli_database.sql.gz as pixeloid@dev2.pixeloid.hu
+  INFO [d74cec72] Finished in 0.505 seconds with exit status 0 (successful).
+  INFO Downloading /tmp/wpcli_database.sql.gz 10.84%
+  INFO Downloading /tmp/wpcli_database.sql.gz 21.68%
+  INFO Downloading /tmp/wpcli_database.sql.gz 32.52%
+  INFO Downloading /tmp/wpcli_database.sql.gz 43.36%
+  INFO Downloading /tmp/wpcli_database.sql.gz 54.2%
+  INFO Downloading /tmp/wpcli_database.sql.gz 65.04%
+  INFO Downloading /tmp/wpcli_database.sql.gz 75.88%
+  INFO Downloading /tmp/wpcli_database.sql.gz 86.72%
+  INFO Downloading /tmp/wpcli_database.sql.gz 100.0%
+  INFO [bfb7a596] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz as pixeloid@dev2.pixeloid.hu
+  INFO [ef217494] Finished in 0.025 seconds with exit status 0 (successful).
+  INFO [e7d8d58b] Running /usr/bin/env gunzip -c /tmp/wpcli_database.sql.gz > /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [22b513fb] Finished in 0.018 seconds with exit status 0 (successful).
+  INFO [dab880dd] Running /usr/local/bin/php /usr/local/bin/wp db import /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [35cc8d22] Finished in 0.794 seconds with exit status 0 (successful).
+  INFO [e7b7976d] Running /usr/bin/env rm /tmp/wpcli_database.sql.gz /tmp/wpcli_database.sql as pixeloid@localhost
+  INFO [cc6a4046] Finished in 0.012 seconds with exit status 0 (successful).
+  INFO [c488a136] Running /usr/local/bin/php /usr/local/bin/wp search-replace http://takarek.dev2.pixeloid.hu http://takarek.dev1 --skip-columns=guid --url=http://takarek.dev2.pixeloid.hu as pixeloid@localhost
+  INFO [1a99d172] Finished in 0.718 seconds with exit status 0 (successful).
