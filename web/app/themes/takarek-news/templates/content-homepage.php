@@ -1,6 +1,10 @@
 <?php 
 
-$tax_terms = get_terms( 'category', 'orderby=name');
+$tax_terms = get_terms(array(
+	'taxonomy' => 'category',
+	'orderby' => 'slug',
+	'exclude' => 9
+));
 
 
 $heroes = get_posts(array(
@@ -9,8 +13,14 @@ $heroes = get_posts(array(
 	'meta_query'	=> array(
 		'relation'		=> 'AND',
 		array(
+			'key'	 	=> 'display_in_hero',
+			'compare' 	=> '=',
+			'value'	 	=> true,
+		),
+		array(
 			'key'	 	=> 'homepage_hero',
-			'compare' 	=> 'IS NOT NULL',
+			'compare' 	=> '!=',
+			'value'	 	=> '',
 		)
 	),
 ));

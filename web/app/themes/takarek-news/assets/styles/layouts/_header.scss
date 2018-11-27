@@ -76,10 +76,21 @@
 	margin-bottom: 2rem;
 	border-top: 1px solid #429ddb;
 	h1 {
-			@extend .h6;
+			@extend .h5;
 		color: $white;
 		margin: 0;
 		text-transform: uppercase;
 		font-weight: 600;
+	}
+
+	.button {
+		background:darken($primary-color, 6%);
+		&:hover {
+			background:darken($primary-color, 13%);
+		}
+		@include breakpoint(medium) {
+			margin: 0;
+		}
+
 	}
 }
