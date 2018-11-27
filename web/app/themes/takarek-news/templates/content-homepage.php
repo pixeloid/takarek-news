@@ -48,7 +48,7 @@ $features = get_posts(array(
 				<div class="site-hero " style="background:  url(<?php echo get_field('homepage_hero', $hero); ?>) top /cover;">
 					<div class="grid-container">
 						<div class="site-hero__inner grid-x grid-margin-x align-middle">
-							<div class="site-hero-content cell medium-8 large-6" data-swiper-parallax="-300">
+							<div class="site-hero-content cell medium-8 large-7" data-swiper-parallax="-300">
 							  <h1> <?php echo get_the_title($hero) ?></h1>
 							  <?php if (get_field('lead', $hero)): ?>
 							  	<p>
