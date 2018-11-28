@@ -31,13 +31,13 @@ use Roots\Sage\Wrapper;
     <div class="site-header">
       <div class="grid-container fluid">
         <div class="grid-x grid-margin-x align-middle">
-          <div class="cell shrink">
+          <div class="cell small-6 large-6">
             <?php
               do_action('get_header');
               get_template_part('templates/header');
             ?>
           </div>
-          <div class="cell auto">
+          <div class="cell auto  xlarge-6">
             <?php
             if (has_nav_menu('primary_navigation')) :
               wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'menu horizontal align-right cat-menu ']);
