@@ -1,0 +1,3 @@
+[submodule "web/app/themes/takarek-theme"]
+	path = web/app/themes/takarek-theme
+	url = git@github.com:pixeloid/takarek-news-theme.git
