@@ -8,6 +8,8 @@ use Roots\Sage\Assets;
  * Theme setup
  */
 function setup() {
+
+
   // Enable features from Soil when plugin is activated
   // https://roots.io/plugins/soil/
   add_theme_support('soil-clean-up');
