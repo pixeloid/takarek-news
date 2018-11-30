@@ -1,7 +1,3 @@
 [submodule "takarek-news-theme"]
 	path = web/app/themes/takarek-news-theme
 	url = git@github.com:pixeloid/takarek-news-theme.git
-[submodule "web/app/themes/takarek-news-theme"]
-	path = web/app/themes/takarek-news-theme
-	url = git@github.com:pixeloid/takarek-news-theme.git
-	branch = master
