@@ -1,0 +1,173 @@
+# Logfile created on 2018-11-30 13:28:07 +0100 by logger.rb/53141
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-30 13:28:07 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [fecc2156] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [f041653f] Finished in 0.597 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [3699ceb4] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [18663ab0] Finished in 0.061 seconds with exit status 0 (successful).
+  INFO [d82d0f93] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [43a95845] Finished in 3.161 seconds with exit status 0 (successful).
+  INFO [9de8d767] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [85232742] Finished in 0.080 seconds with exit status 0 (successful).
+  INFO [d7a6e1e0] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [e052e313] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [b18fb5fb] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [d388ac0f] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [591b63ef] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [7b664be2] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [c1f231f1] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [5f96a21c] Finished in 1.987 seconds with exit status 0 (successful).
+  INFO [82cfab41] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130122811 as pixeloid@dev2.pixeloid.hu
+  INFO [be292718] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO [2b3a136c] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181130122811 as pixeloid@dev2.pixeloid.hu
+  INFO [cc4ba573] Finished in 5.306 seconds with exit status 0 (successful).
+  INFO [ed6c20da] Running /usr/bin/env git clone -b master --recursive . /Users/pixeloid/Sites/takarek-news/releases/20181130122811 as pixeloid@dev2.pixeloid.hu
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-30 13:28:51 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [16828d57] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [e00966d8] Finished in 0.286 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [96310a7b] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [d738e6da] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [61292d10] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [69791112] Finished in 1.764 seconds with exit status 0 (successful).
+  INFO [71f14a6d] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [260877d5] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [5dd061e2] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [2a8cf853] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [b1cfbc93] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [cd41aa19] Finished in 0.048 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [433d757f] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [1902b42f] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [03d504fc] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [7b9275b6] Finished in 1.751 seconds with exit status 0 (successful).
+  INFO [b4a115eb] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130122854 as pixeloid@dev2.pixeloid.hu
+  INFO [5bbc227f] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [26721e5d] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181130122854 as pixeloid@dev2.pixeloid.hu
+  INFO [3497e878] Finished in 4.642 seconds with exit status 0 (successful).
+  INFO [f0753f64] Running /usr/bin/env git clone -b master --recursive . /Users/pixeloid/Sites/takarek-news/releases/20181130122854 as pixeloid@dev2.pixeloid.hu
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-30 13:29:33 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [4c311578] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [fd5033b3] Finished in 0.343 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [48d8c625] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [f5ebf038] Finished in 0.068 seconds with exit status 0 (successful).
+  INFO [ceb7e303] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [3596f2b3] Finished in 1.911 seconds with exit status 0 (successful).
+  INFO [c969d0ca] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [64cdefc9] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [2a529f0f] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [d6d29299] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [7dd2f83e] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [580b9a74] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [4f62329e] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [2d6e8287] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [a4688c27] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [7e7c66b3] Finished in 1.672 seconds with exit status 0 (successful).
+  INFO [820eb237] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130122936 as pixeloid@dev2.pixeloid.hu
+  INFO [511a887e] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [36db82c2] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181130122936 as pixeloid@dev2.pixeloid.hu
+  INFO [88cdf783] Finished in 3.352 seconds with exit status 0 (successful).
+  INFO [4cbfcf73] Running /usr/bin/env git clone -b master --recursive . /Users/pixeloid/Sites/takarek-news/releases/20181130122936 as pixeloid@dev2.pixeloid.hu
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-30 13:33:36 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [80a0096a] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [d99bfcfb] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [20f5bcd3] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [0e3922f8] Finished in 0.050 seconds with exit status 0 (successful).
+  INFO [3bfb878a] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [929de720] Finished in 1.841 seconds with exit status 0 (successful).
+  INFO [23f8a80e] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [c543aa57] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [15b48689] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [5e6bc932] Finished in 0.055 seconds with exit status 0 (successful).
+  INFO [16ab1615] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [bd4e98fc] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [3ddceb65] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [d7f204b5] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [c37c0627] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [3de49d65] Finished in 1.802 seconds with exit status 0 (successful).
+  INFO [07eb709f] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130123339 as pixeloid@dev2.pixeloid.hu
+  INFO [4fbafb5f] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [8102c53b] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181130123339 as pixeloid@dev2.pixeloid.hu
+  INFO [dc3533b8] Finished in 4.365 seconds with exit status 0 (successful).
+  INFO [f4e994b6] Running /usr/bin/env git reset --mixed --quiet master -- as pixeloid@dev2.pixeloid.hu
+  INFO [9c262181] Finished in 0.932 seconds with exit status 0 (successful).
+  INFO [f6ccb895] Running /usr/bin/env git submodule update --init --checkout --recursive --quiet as pixeloid@dev2.pixeloid.hu
+  INFO [29cf1204] Finished in 4.003 seconds with exit status 0 (successful).
+  INFO [7972c7d7] Running /usr/bin/env find /Users/pixeloid/Sites/takarek-news/releases/20181130123339 -name '.git' | xargs -I {} rm -rf '{}' as pixeloid@dev2.pixeloid.hu
+  INFO [1ae39610] Finished in 0.224 seconds with exit status 0 (successful).
+  INFO [f692fd58] Running /usr/bin/env rm -f /Users/pixeloid/Sites/takarek-news/releases/20181130123339/TEMP_INDEX_20181130123339 as pixeloid@dev2.pixeloid.hu
+  INFO [48a5126e] Finished in 0.069 seconds with exit status 0 (successful).
+  INFO [8235bbb9] Running /usr/bin/env echo "06cd40557476437deb50b80e49a9cdd4decf19b8" > REVISION as pixeloid@dev2.pixeloid.hu
+  INFO [920ba522] Finished in 0.086 seconds with exit status 0 (successful).
+  INFO [d612fa4d] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130123339 as pixeloid@dev2.pixeloid.hu
+  INFO [afb2fc16] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [8eb41c60] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/.env /Users/pixeloid/Sites/takarek-news/releases/20181130123339/.env as pixeloid@dev2.pixeloid.hu
+  INFO [76901cae] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [2d2be5b7] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130123339/web/app as pixeloid@dev2.pixeloid.hu
+  INFO [ef88a82c] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [b66f302b] Running /usr/bin/env rm -rf /Users/pixeloid/Sites/takarek-news/releases/20181130123339/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [d89bfd7e] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [b051ea08] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads /Users/pixeloid/Sites/takarek-news/releases/20181130123339/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [c74c95db] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [5159e63d] Running /usr/local/bin/php /usr/local/bin/composer install --no-dev --no-interaction --optimize-autoloader as pixeloid@dev2.pixeloid.hu
+  INFO [c7af0138] Finished in 2.582 seconds with exit status 0 (successful).
+  INFO [4153a4fb] Running /usr/bin/env gulp build as pixeloid@localhost
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-30 14:23:53 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [9c5a3ecd] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [70e2f8ea] Finished in 0.933 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [ebb5e805] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [cea7e78c] Finished in 0.051 seconds with exit status 0 (successful).
+  INFO [4df63f24] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [b7d0d458] Finished in 1.960 seconds with exit status 0 (successful).
+  INFO [a70a3e61] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [aba4ee89] Finished in 0.065 seconds with exit status 0 (successful).
+  INFO [804352c3] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [96c27117] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [9aaad9d0] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [610c8854] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [f819174d] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [767f0573] Finished in 0.096 seconds with exit status 0 (successful).
+  INFO [bcac9171] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [40e32dd9] Finished in 2.075 seconds with exit status 0 (successful).
+  INFO [7305ea92] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130132356 as pixeloid@dev2.pixeloid.hu
+  INFO [ecec9422] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [783d2faa] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181130132356 as pixeloid@dev2.pixeloid.hu
+  INFO [122cef2a] Finished in 4.686 seconds with exit status 0 (successful).
+  INFO [3ad2f8ee] Running /usr/bin/env git reset --mixed --quiet master -- as pixeloid@dev2.pixeloid.hu
+  INFO [d96af079] Finished in 0.895 seconds with exit status 0 (successful).
+  INFO [1dcf2615] Running /usr/bin/env git submodule update --init --checkout --recursive --quiet as pixeloid@dev2.pixeloid.hu
+  INFO [2e32301a] Finished in 0.752 seconds with exit status 0 (successful).
+  INFO [4e0afdbe] Running /usr/bin/env find /Users/pixeloid/Sites/takarek-news/releases/20181130132356 -name '.git' | xargs -I {} rm -rf '{}' as pixeloid@dev2.pixeloid.hu
+  INFO [0bf1e982] Finished in 0.139 seconds with exit status 0 (successful).
+  INFO [60df5e2c] Running /usr/bin/env rm -f /Users/pixeloid/Sites/takarek-news/releases/20181130132356/TEMP_INDEX_20181130132356 as pixeloid@dev2.pixeloid.hu
+  INFO [50c0a2e8] Finished in 0.057 seconds with exit status 0 (successful).
+  INFO [6160371e] Running /usr/bin/env echo "06cd40557476437deb50b80e49a9cdd4decf19b8" > REVISION as pixeloid@dev2.pixeloid.hu
+  INFO [8779d28c] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [bc4bd1f8] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130132356 as pixeloid@dev2.pixeloid.hu
+  INFO [ad46f20e] Finished in 0.063 seconds with exit status 0 (successful).
+  INFO [f3245d52] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/.env /Users/pixeloid/Sites/takarek-news/releases/20181130132356/.env as pixeloid@dev2.pixeloid.hu
+  INFO [08c91417] Finished in 0.067 seconds with exit status 0 (successful).
+  INFO [570a77f0] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130132356/web/app as pixeloid@dev2.pixeloid.hu
+  INFO [e038323c] Finished in 0.062 seconds with exit status 0 (successful).
+  INFO [f6cd3657] Running /usr/bin/env rm -rf /Users/pixeloid/Sites/takarek-news/releases/20181130132356/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [e7f232f3] Finished in 0.144 seconds with exit status 0 (successful).
+  INFO [19bdfadd] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads /Users/pixeloid/Sites/takarek-news/releases/20181130132356/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [150ad020] Finished in 0.064 seconds with exit status 0 (successful).
+  INFO [fa957465] Running /usr/local/bin/php /usr/local/bin/composer install --no-dev --no-interaction --optimize-autoloader as pixeloid@dev2.pixeloid.hu

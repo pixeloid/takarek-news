@@ -8,6 +8,10 @@ require "capistrano/scm/git"
 install_plugin Capistrano::SCM::Git
 
 
+require "capistrano/scm/git-with-submodules"
+install_plugin Capistrano::SCM::Git::WithSubmodules
+
+
 # Load tasks from gems
 require 'capistrano/composer'
 

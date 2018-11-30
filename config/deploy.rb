@@ -89,7 +89,7 @@ namespace :assets do
   task deploy: %w(compile copy)
 end
 
-before 'deploy:updated', 'assets:deploy'
+# before 'deploy:updated', 'assets:deploy'
 
 
 
