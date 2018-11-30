@@ -112,3 +112,4 @@ function custom_excerpt_length( $length ) {
     return 45;
 }
 add_filter( 'excerpt_length', __NAMESPACE__ . '\\custom_excerpt_length', 999 );
+add_filter('jpeg_quality', function($arg){return 60;});

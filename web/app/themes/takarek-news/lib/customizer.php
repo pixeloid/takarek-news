@@ -37,7 +37,7 @@ function takarek_custom_logo_setup() {
 add_action( 'after_setup_theme', __NAMESPACE__ . '\\takarek_imagesizes' );
 
 function takarek_imagesizes() {
-    add_image_size('medium_square',500,500, true);
+    add_image_size('medium_square',400,400, true);
     add_image_size('hero',2000,750, true);
-    add_image_size('card_landscape',800,600, true);
+    add_image_size('card_landscape',400,300, true);
 }
