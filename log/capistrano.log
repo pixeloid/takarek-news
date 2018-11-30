@@ -8510,3 +8510,42 @@
   INFO ---------------------------------------------------------------------------
   INFO [838d1c5b] Running /usr/bin/env rsync -avz --rsh=ssh pixeloid@dev2.pixeloid.hu:/Users/pixeloid/Sites/takarek-news/shared/web/app/uploads/ web/app/uploads/ as pixeloid@localhost
   INFO [af130bb8] Finished in 0.356 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-11-30 12:27:36 +0100 cap staging deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a61a0461] Running /usr/bin/env mkdir -p /tmp as pixeloid@dev2.pixeloid.hu
+  INFO [2a8fe314] Finished in 0.594 seconds with exit status 0 (successful).
+  INFO Uploading /tmp/git-ssh-takarek-news-staging-pixeloid.sh 100.0%
+  INFO [46913357] Running /usr/bin/env chmod 700 /tmp/git-ssh-takarek-news-staging-pixeloid.sh as pixeloid@dev2.pixeloid.hu
+  INFO [b8ee8e1c] Finished in 0.049 seconds with exit status 0 (successful).
+  INFO [05dcf882] Running /usr/bin/env git ls-remote git@github.com:pixeloid/takarek-news.git HEAD as pixeloid@dev2.pixeloid.hu
+  INFO [e1dfae35] Finished in 1.852 seconds with exit status 0 (successful).
+  INFO [da798772] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared /Users/pixeloid/Sites/takarek-news/releases as pixeloid@dev2.pixeloid.hu
+  INFO [a58fe7d8] Finished in 0.053 seconds with exit status 0 (successful).
+  INFO [8907c57b] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [aea26ac2] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [74243a02] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/shared as pixeloid@dev2.pixeloid.hu
+  INFO [50a127f9] Finished in 0.056 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /Users/pixeloid/Sites/takarek-news/repo
+  INFO [be122a1b] Running /usr/bin/env git remote set-url origin git@github.com:pixeloid/takarek-news.git as pixeloid@dev2.pixeloid.hu
+  INFO [7610d302] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [4cf7d513] Running /usr/bin/env git remote update --prune as pixeloid@dev2.pixeloid.hu
+  INFO [4301f8ab] Finished in 2.138 seconds with exit status 0 (successful).
+  INFO [7ad95c2a] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130112739 as pixeloid@dev2.pixeloid.hu
+  INFO [9e14a903] Finished in 0.060 seconds with exit status 0 (successful).
+  INFO [476dfc07] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /Users/pixeloid/Sites/takarek-news/releases/20181130112739 as pixeloid@dev2.pixeloid.hu
+  INFO [9a8e098f] Finished in 4.747 seconds with exit status 0 (successful).
+  INFO [1c57baa4] Running /usr/bin/env echo "5abcc6b2de4fda19507e79311c170afdb402cc08" > REVISION as pixeloid@dev2.pixeloid.hu
+  INFO [7d4bcfa2] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [c5da7a3b] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130112739 as pixeloid@dev2.pixeloid.hu
+  INFO [7fd5b0c9] Finished in 0.054 seconds with exit status 0 (successful).
+  INFO [373746c0] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/.env /Users/pixeloid/Sites/takarek-news/releases/20181130112739/.env as pixeloid@dev2.pixeloid.hu
+  INFO [9eefe477] Finished in 0.058 seconds with exit status 0 (successful).
+  INFO [fa32d762] Running /usr/bin/env mkdir -p /Users/pixeloid/Sites/takarek-news/releases/20181130112739/web/app as pixeloid@dev2.pixeloid.hu
+  INFO [9a479335] Finished in 0.059 seconds with exit status 0 (successful).
+  INFO [9081ce12] Running /usr/bin/env rm -rf /Users/pixeloid/Sites/takarek-news/releases/20181130112739/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [b89c87d2] Finished in 0.140 seconds with exit status 0 (successful).
+  INFO [65e07a1c] Running /usr/bin/env ln -s /Users/pixeloid/Sites/takarek-news/shared/web/app/uploads /Users/pixeloid/Sites/takarek-news/releases/20181130112739/web/app/uploads as pixeloid@dev2.pixeloid.hu
+  INFO [66e0711b] Finished in 0.052 seconds with exit status 0 (successful).
+  INFO [f07703c5] Running /usr/local/bin/php /usr/local/bin/composer install --no-dev --no-interaction --optimize-autoloader as pixeloid@dev2.pixeloid.hu
+  INFO [b5ab72ab] Finished in 3.636 seconds with exit status 0 (successful).
