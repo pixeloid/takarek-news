@@ -20,3 +20,5 @@ web/wp
 
 web/app/cache/*
 !web/app/cache/.gitkeep
+web/app/cache/*
+!web/app/cache/.gitkeep
