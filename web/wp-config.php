@@ -6,4 +6,11 @@
  */
 require_once dirname(__DIR__) . '/vendor/autoload.php';
 require_once dirname(__DIR__) . '/config/application.php';
+
+// WP Super Cache
+// WP Super Cache
+define( 'WPCACHEHOME', '/Users/pixeloid/Sites/takarek/web/app/plugins/wp-super-cache/' );
+define('WP_CACHE', true); //Added by WP-Cache Manager
+
+
 require_once ABSPATH . 'wp-settings.php';
